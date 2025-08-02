@@ -179,3 +179,59 @@ footer {
     margin-top: auto;
     align-self: flex-start;
 }
+
+/* Dice Game Styles */
+.dice-game-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.game-interface {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 10px;
+}
+
+.dice-game-container:hover .game-interface {
+  opacity: 1;
+}
+
+.dice {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.dice img {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-play {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.game-result {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  min-height: 40px;
+  margin-bottom: 10px;
+}
