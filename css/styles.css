@@ -135,3 +135,47 @@ footer {
         max-height: 300px;
     }
 }
+.pdf-preview {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Modal PDF Styles */
+.pdf-container {
+    height: 60vh;
+    min-height: 400px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.pdf-iframe-full {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Card adjustments for PDF preview */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-view {
+    margin-top: auto;
+    align-self: flex-start;
+}
